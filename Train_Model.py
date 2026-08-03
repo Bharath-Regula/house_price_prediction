@@ -1,6 +1,6 @@
 import pandas as pd
 import pickle
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 # load the dataset
 df = pd.read_csv("house_p.csv")
 x = df[['Area', 'Bedrooms', 'Age']]
