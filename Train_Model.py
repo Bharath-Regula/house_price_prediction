@@ -6,7 +6,7 @@ df = pd.read_csv("house_p.csv")
 x = df[['Area', 'Bedrooms', 'Age']]
 y = df['Price']
 # create a logistic regression model
-model = LogisticRegression()
+model = LinearRegression()
 model.fit(x, y)
 # save model using pickle
 with open('house_price_model.pkl', 'wb') as file:
